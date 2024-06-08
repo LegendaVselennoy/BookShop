@@ -6,3 +6,20 @@ server:
     threads:
       max: 50               # максимальное количество потоков обработки запросов может быть обработано одновременно.
       min-spare: 5          # минимальное количество потоков, которые всегда должны выполняться, создаваемых при запуске.
+
+spring:
+  datasource:
+    username: postgres
+    password: 7774256rom
+    url: jdbc:postgresql://localhost:5434/polardb_catalog
+    hikari:
+      connection-timeout: 2000
+      maximum-pool-size: 5
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+#  sql:
+#    init:
+#      mode: always

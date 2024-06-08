@@ -1,0 +1,3 @@
+spring:
+  datasource:
+    url: jdbc:tc:postresql:14.4
